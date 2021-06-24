@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DllVerify", "DllVerify\DllVerify.csproj", "{F45F1FFB-8960-4549-85D1-BC6821203035}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F45F1FFB-8960-4549-85D1-BC6821203035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F45F1FFB-8960-4549-85D1-BC6821203035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F45F1FFB-8960-4549-85D1-BC6821203035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F45F1FFB-8960-4549-85D1-BC6821203035}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {962D01E7-DBF7-420B-BD89-76483B872D5A}
+	EndGlobalSection
+EndGlobal
