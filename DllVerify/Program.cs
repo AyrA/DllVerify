@@ -231,12 +231,14 @@ Possible exit codes:
         /// <remarks>This list may contain duplicates</remarks>
         private static string[] GetDllSearchPath()
         {
-            var Dirs = new List<string>();
-            Dirs.Add(Path.GetDirectoryName(GetProcPath()));
-            Dirs.Add(Environment.GetFolderPath(Environment.SpecialFolder.System));
-            Dirs.Add(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), "System"));
-            Dirs.Add(Environment.GetFolderPath(Environment.SpecialFolder.Windows));
-            Dirs.Add(Environment.CurrentDirectory);
+            var Dirs = new List<string>
+            {
+                Path.GetDirectoryName(GetProcPath()),
+                Environment.GetFolderPath(Environment.SpecialFolder.System),
+                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), "System"),
+                Environment.GetFolderPath(Environment.SpecialFolder.Windows),
+                Environment.CurrentDirectory
+            };
             foreach (var P in Environment.GetEnvironmentVariable("PATH").Split(';'))
             {
                 Dirs.Add(P);
