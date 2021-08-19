@@ -2,7 +2,7 @@
 
 This tool verifies DLL and executable signatures.
 
-Verification is done via the `WinVerifyTrustResult()` in `wintrust.dll`
+Verification is done via the `WinVerifyTrust()` in `wintrust.dll`
 
 ## Usage
 
@@ -55,3 +55,12 @@ Then use `Trust.WinTrust.VerifyEmbeddedSignature(DllFileName);`
 
 Searching for DLL files is not part of the application.
 You should always feed a full file name and path into the verification function.
+
+## DllImport
+
+DllImport in .NET can be forced to use a certain location by using an attribute:
+`[DefaultDllImportSearchPaths(DllImportSearchPath)]`
+
+DllImportSearchPath is an enumeration provided by .NET.
+Multiple values can be combined if needed.
+Note that `SafeDirectories` considers the application directory as safe.
